@@ -7,7 +7,7 @@ app.use(cors());
 app.use(morgan('dev'));
 
 app.get('/api', (req, res) => {
-  return res.sendFile(__dirname + '/index.html');
+  return res.json({ message: 'Hello World!' });
 });
 
 app.listen(3020, () => {
